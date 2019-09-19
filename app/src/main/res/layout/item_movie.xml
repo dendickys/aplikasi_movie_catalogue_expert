@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/img_poster"
+        android:layout_width="100dp"
+        android:layout_height="150dp"
+        android:scaleType="fitXY" />
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_toEndOf="@id/img_poster"
+        android:text="@string/movie_name"
+        android:textColor="@color/colorTextPrimary"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tv_year"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_name"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="10dp"
+        android:layout_toEndOf="@id/img_poster"
+        android:text="@string/movie_year"
+        android:textColor="@color/colorTextPrimary"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tv_genre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_year"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="10dp"
+        android:layout_toEndOf="@id/img_poster"
+        android:text="@string/movie_genre"
+        android:textColor="@color/colorTextSecondary"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/tv_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_genre"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="10dp"
+        android:layout_toEndOf="@id/img_poster"
+        android:maxLines="3"
+        android:text="@string/movie_description"
+        android:textColor="@color/colorTextSecondary"
+        android:textSize="12sp" />
+</RelativeLayout>
