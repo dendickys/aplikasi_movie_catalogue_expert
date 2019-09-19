@@ -24,6 +24,7 @@ public class MovieAdapter extends BaseAdapter {
 
     public MovieAdapter(Context context) {
         this.context = context;
+        movies = new ArrayList<>();
     }
 
     @Override

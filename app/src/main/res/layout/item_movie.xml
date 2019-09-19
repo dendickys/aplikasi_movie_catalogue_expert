@@ -7,6 +7,9 @@
         android:id="@+id/img_poster"
         android:layout_width="100dp"
         android:layout_height="150dp"
+        android:layout_marginStart="@dimen/activity_horizontal_margin"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:layout_marginBottom="@dimen/activity_vertical_margin"
         android:scaleType="fitXY" />
 
     <TextView
@@ -14,10 +17,12 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="24dp"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:layout_marginEnd="@dimen/activity_horizontal_margin"
         android:layout_toEndOf="@id/img_poster"
         android:text="@string/movie_name"
         android:textColor="@color/colorTextPrimary"
-        android:textSize="18sp"
+        android:textSize="14sp"
         android:textStyle="bold" />
 
     <TextView
@@ -26,11 +31,12 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/tv_name"
         android:layout_marginStart="24dp"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="@dimen/activity_horizontal_margin"
         android:layout_toEndOf="@id/img_poster"
         android:text="@string/movie_year"
         android:textColor="@color/colorTextPrimary"
-        android:textSize="18sp"
+        android:textSize="14sp"
         android:textStyle="bold" />
 
     <TextView
@@ -39,11 +45,12 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/tv_year"
         android:layout_marginStart="24dp"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="@dimen/activity_horizontal_margin"
         android:layout_toEndOf="@id/img_poster"
         android:text="@string/movie_genre"
         android:textColor="@color/colorTextSecondary"
-        android:textSize="14sp" />
+        android:textSize="12sp" />
 
     <TextView
         android:id="@+id/tv_description"
@@ -52,6 +59,8 @@
         android:layout_below="@id/tv_genre"
         android:layout_marginStart="24dp"
         android:layout_marginTop="10dp"
+        android:layout_marginEnd="@dimen/activity_horizontal_margin"
+        android:layout_marginBottom="@dimen/activity_vertical_margin"
         android:layout_toEndOf="@id/img_poster"
         android:maxLines="3"
         android:text="@string/movie_description"
