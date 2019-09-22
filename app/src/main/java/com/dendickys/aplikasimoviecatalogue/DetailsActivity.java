@@ -16,7 +16,7 @@ import java.util.List;
 public class DetailsActivity extends AppCompatActivity {
     ImageView imgPoster;
     TextView tvName, tvYear, tvGenre, tvDescription;
-    public static final String EXTRA_MOVIE = "extra_movie";
+    static final String EXTRA_MOVIE = "extra_movie";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

@@ -22,9 +22,9 @@
         android:layout_marginTop="@dimen/activity_vertical_margin"
         android:layout_marginEnd="@dimen/activity_horizontal_margin"
         android:layout_toEndOf="@id/img_poster_detail"
-        android:text="@string/movie_name"
         android:textColor="@color/colorTextPrimary"
-        android:textSize="16sp" />
+        android:textSize="16sp"
+        tools:text="@string/movie_name" />
 
     <TextView
         android:id="@+id/tv_year_detail"
@@ -35,9 +35,9 @@
         android:layout_marginTop="10dp"
         android:layout_marginEnd="@dimen/activity_horizontal_margin"
         android:layout_toEndOf="@id/img_poster_detail"
-        android:text="@string/movie_year"
         android:textColor="@color/colorTextPrimary"
-        android:textSize="16sp" />
+        android:textSize="16sp"
+        tools:text="@string/movie_year" />
 
     <TextView
         android:id="@+id/tv_genre_detail"
@@ -48,9 +48,9 @@
         android:layout_marginTop="16dp"
         android:layout_marginEnd="@dimen/activity_horizontal_margin"
         android:layout_toEndOf="@id/img_poster_detail"
-        android:text="@string/movie_genre"
         android:textColor="@color/colorTextSecondary"
-        android:textSize="14sp" />
+        android:textSize="14sp"
+        tools:text="@string/movie_genre" />
 
     <TextView
         android:id="@+id/tv_overview_detail"
@@ -72,8 +72,8 @@
         android:layout_marginStart="@dimen/activity_horizontal_margin"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="@dimen/activity_horizontal_margin"
-        android:text="@string/movie_description"
         android:textColor="@color/colorTextSecondary"
-        android:textSize="14sp" />
+        android:textSize="14sp"
+        tools:text="@string/movie_description" />
 
 </RelativeLayout>

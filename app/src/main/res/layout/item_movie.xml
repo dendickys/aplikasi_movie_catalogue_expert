@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
@@ -20,10 +21,10 @@
         android:layout_marginTop="@dimen/activity_vertical_margin"
         android:layout_marginEnd="@dimen/activity_horizontal_margin"
         android:layout_toEndOf="@id/img_poster"
-        android:text="@string/movie_name"
         android:textColor="@color/colorTextPrimary"
         android:textSize="14sp"
-        android:textStyle="bold" />
+        android:textStyle="bold"
+        tools:text="@string/movie_name" />
 
     <TextView
         android:id="@+id/tv_year"
@@ -34,10 +35,10 @@
         android:layout_marginTop="2dp"
         android:layout_marginEnd="@dimen/activity_horizontal_margin"
         android:layout_toEndOf="@id/img_poster"
-        android:text="@string/movie_year"
         android:textColor="@color/colorTextPrimary"
         android:textSize="14sp"
-        android:textStyle="bold" />
+        android:textStyle="bold"
+        tools:text="@string/movie_year" />
 
     <TextView
         android:id="@+id/tv_genre"
@@ -48,9 +49,9 @@
         android:layout_marginTop="2dp"
         android:layout_marginEnd="@dimen/activity_horizontal_margin"
         android:layout_toEndOf="@id/img_poster"
-        android:text="@string/movie_genre"
         android:textColor="@color/colorTextSecondary"
-        android:textSize="12sp" />
+        android:textSize="12sp"
+        tools:text="@string/movie_genre" />
 
     <TextView
         android:id="@+id/tv_description"
@@ -63,7 +64,7 @@
         android:layout_marginBottom="@dimen/activity_vertical_margin"
         android:layout_toEndOf="@id/img_poster"
         android:maxLines="3"
-        android:text="@string/movie_description"
         android:textColor="@color/colorTextSecondary"
-        android:textSize="12sp" />
+        android:textSize="12sp"
+        tools:text="@string/movie_description" />
 </RelativeLayout>
