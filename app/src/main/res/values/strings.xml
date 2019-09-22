@@ -1,10 +1,4 @@
 <resources>
-    <string name="app_name">Movie Catalogue</string>
-    <string name="movie_name">Judul Film</string>
-    <string name="movie_year">Tahun</string>
-    <string name="movie_genre">Genre</string>
-    <string name="movie_description">Deskripsi</string>
-
     <array name="data_poster">
         <item>@drawable/poster_a_star</item>
         <item>@drawable/poster_aquaman</item>
@@ -27,7 +21,14 @@
         <item>@drawable/poster_themule</item>
         <item>@drawable/poster_venom</item>
     </array>
-    
+    <string name="app_name">Movie Catalogue</string>
+    <string name="movie_name">Judul Film</string>
+    <string name="movie_year">Tahun</string>
+    <string name="movie_genre">Genre</string>
+    <string name="movie_overview">Overview</string>
+
+    <string name="movie_description">Deskripsi</string>
+
     <string-array name="data_name">
         <item>A Star Is Born</item>
         <item>Aquaman</item>
@@ -50,7 +51,7 @@
         <item>The Mule</item>
         <item>Venom</item>
     </string-array>
-    
+
     <string-array name="data_year">
         <item>2018</item>
         <item>2018</item>

@@ -1,6 +1,8 @@
 package com.dendickys.aplikasimoviecatalogue;
 
+import android.content.Intent;
 import android.content.res.TypedArray;
+import android.os.Parcelable;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -12,6 +14,8 @@ import com.dendickys.aplikasimoviecatalogue.adapter.MovieAdapter;
 import com.dendickys.aplikasimoviecatalogue.model.Movie;
 
 import java.util.ArrayList;
+
+import static com.dendickys.aplikasimoviecatalogue.DetailsActivity.EXTRA_MOVIE;
 
 public class MainActivity extends AppCompatActivity {
     private String[] dataName, dataYear, dataGenre, dataDescription;
@@ -32,7 +36,9 @@ public class MainActivity extends AppCompatActivity {
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                Toast.makeText(MainActivity.this, movies.get(position).getName(), Toast.LENGTH_SHORT).show();
+                Intent intentDetails = new Intent(MainActivity.this, DetailsActivity.class);
+                intentDetails.putExtra(EXTRA_MOVIE, movies.get(position));
+                startActivity(intentDetails);
             }
         });
     }
